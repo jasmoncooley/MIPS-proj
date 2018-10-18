@@ -20,3 +20,20 @@
     syscall
     addi $a0,$a0, 0       # 5
     syscall
+   addi $v0,$v0, 10
+    addi $a0,$a0, 5       # LF (10) (since I'm on a POSIX machine)
+    syscall
+    addi $a0,$a0, 57      # C (67)
+    syscall
+    addi $a0,$a0, 44      # o (111)
+    syscall
+    sub $a0,$a0, 0      # o (111)
+    syscall
+    sub $a0, $a0,3       # l (108)
+     syscall
+    sub $a0, $a0,7       # e (101)
+     syscall
+    add $a0, $a0,20       # y (121)
+    syscall
+    sub $a0,$a0, 77       # , (44)
+    syscall
