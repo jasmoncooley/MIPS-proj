@@ -21,7 +21,7 @@
     addi $a0,$a0, 0       # 5
     syscall
    addi $v0,$v0, 10
-    addi $a0,$a0, 5       # LF (10) (since I'm on a POSIX machine)
+    addi $a0,$a0, 5       # LF (10)
     syscall
     addi $a0,$a0, 57      # C (67)
     syscall
@@ -37,3 +37,18 @@
     syscall
     sub $a0,$a0, 77       # , (44)
     syscall
+    sub $a0, $a0,12       # [space] (32)
+    syscall
+    addi $a0,$a0, 42      # J (74)
+    syscall
+    addi $a0, $a0, 23 # a (97)
+    syscall
+    addi $a0, $a0, 18 # s (115)
+    syscall
+    sub $a0, $a0, 6  # m (109)
+    syscall
+    addi $a0, $a0, 2 # o (111)
+    syscall
+    sub $a0, $a0, 1   # n (110)
+    syscall
+   
